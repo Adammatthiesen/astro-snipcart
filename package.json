@@ -1,9 +1,18 @@
 {
-  "name": "astro-snipcart",
+  "name": "@adammatthiesen/astro-snipcart",
   "description": "Astro SnipCart Integration based on another npm package by lloyedjatkinson that has been updated for astro v4",
   "version": "0.0.1",
   "author": "Adam Matthiesen <adam@matthiesen.xyz>",
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adammatthiesen/astro-snipcart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adammatthiesen/astro-snipcart/issues"
+  },
+  "homepage": "https://github.com/Adammatthiesen/astro-snipcart",
   "exports": {
     ".": "./index.ts"
   },
@@ -24,5 +33,6 @@
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "typescript": "^5.3.3"
-  }
+  },
+  "main": "index.js"
 }

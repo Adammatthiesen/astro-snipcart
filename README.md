@@ -6,7 +6,7 @@ The Following are the available imports availble to you for building your page..
 
 ```
 import { SCCheckout, SCCartItemCount, SCCartTotalValue, SCCustomerDashboard,
-SCMakeProduct, SCSetupScript} from '';
+SCMakeProduct, SCSetupScript} from '@adammatthiesen/astro-snipcart';
 ```
 
 - ```SCCheckout``` creates a button for opening the cart
@@ -19,5 +19,7 @@ SCMakeProduct, SCSetupScript} from '';
 ## Install Astro Snipcart
 
 ```
-npm install 
+npm install @adammatthiesen/astro-snipcart
 ```
+
+Make sure to add ```PUBLIC_SNIPCART_API_KEY``` to your environment variables
