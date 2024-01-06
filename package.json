@@ -1,6 +1,8 @@
 {
-  "name": "",
+  "name": "astro-snipcart",
+  "description": "Astro SnipCart Integration based on another npm package by lloyedjatkinson that has been updated for astro v4",
   "version": "0.0.1",
+  "author": "Adam Matthiesen <adam@matthiesen.xyz>",
   "type": "module",
   "exports": {
     ".": "./index.ts"
@@ -17,7 +19,7 @@
     "astro": "^4.1.1"
   },
   "peerDependencies": {
-    "astro": "^3.0.0"
+    "astro": "^4.0.0"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
