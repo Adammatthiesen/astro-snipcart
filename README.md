@@ -1,6 +1,6 @@
 # Welcome to Astro Snipcart for Astro V4+
 
-This project is based on another project of the same name that hasnt been updated to properly support Astro v4.  This project is super simple and just gives you support for Snipcart within astro using very simple components...
+*This project is based on another project with the same name... [lloyedjatkinson/astro-snipcart](https://github.com/lloydjatkinson/astro-snipcart) that hasnt been updated to properly support Astro v4.*  This project is super simple and just gives you support for Snipcart within astro using very simple components...
 
 The Following are the available imports availble to you for building your page... i have layed them out in a typical layout of how to import them into your Astro project for use.
 
