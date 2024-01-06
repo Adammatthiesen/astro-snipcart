@@ -19,7 +19,21 @@ SCMakeProduct, SCSetupScript} from '@adammatthiesen/astro-snipcart';
 ## Install Astro Snipcart
 
 ```
-npm install @adammatthiesen/astro-snipcart
+npm i @adammatthiesen/astro-snipcart
 ```
 
 Make sure to add ```PUBLIC_SNIPCART_API_KEY``` to your environment variables
+
+An example of making a product:
+
+```
+<SCMakeProduct
+  id="SKU-0001" 
+  name="Example Name"
+  url="/store/example"
+  price={ 12.99 }
+  description="Some Default Example Product" 
+  image="/Link/To/Image">
+  <button>Add to cart</button>
+</SCMakeProduct>
+```
