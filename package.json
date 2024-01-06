@@ -1,7 +1,7 @@
 {
   "name": "@adammatthiesen/astro-snipcart",
   "description": "Astro SnipCart Integration based on another npm package by lloyedjatkinson that has been updated for astro v4",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Adam Matthiesen <adam@matthiesen.xyz>",
   "type": "module",
   "license": "MIT",
@@ -34,5 +34,5 @@
     "@astrojs/check": "^0.3.4",
     "typescript": "^5.3.3"
   },
-  "main": "index.js"
+  "main": "index.ts"
 }
