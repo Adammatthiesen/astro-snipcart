@@ -24,16 +24,4 @@ npm i @adammatthiesen/astro-snipcart
 
 Make sure to add ```PUBLIC_SNIPCART_API_KEY``` to your environment variables
 
-An example of making a product:
-
-```
-<SCMakeProduct
-  id="SKU-0001" 
-  name="Example Name"
-  url="/store/example"
-  price={ 12.99 }
-  description="Some Default Example Product" 
-  image="/Link/To/Image">
-  <button>Add to cart</button>
-</SCMakeProduct>
-```
+For a Full tutorial of this addon, check out the [blog post here](https://matthiesen.xyz/blog/getting-started-with-my-astro-snipcart-addon)
