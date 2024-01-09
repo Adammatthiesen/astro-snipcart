@@ -32,7 +32,7 @@ Add one of the following inside your `<head>`:
 Astro **Without ViewTransitions**
 ```html
 ---
-import { SCSetupScript } from '@adammatthiesen/astro-snipcart/vue';
+import { SCSetupScript } from '@adammatthiesen/astro-snipcart';
 ---
 <head>
   /** Other Head Data */
