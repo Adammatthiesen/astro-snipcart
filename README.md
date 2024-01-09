@@ -7,6 +7,8 @@ The Following are the available imports availble to you for building your page..
 ```
 import { SCCheckout, SCCartItemCount, SCCartTotalValue, SCCustomerDashboard,
 SCMakeProduct, SCSetupScript} from '@adammatthiesen/astro-snipcart';
+
+import { SCSetupVUE } from '@adammatthiesen/astro-snipcart/vue';
 ```
 
 - ```SCCheckout``` creates a button for opening the cart
@@ -14,7 +16,8 @@ SCMakeProduct, SCSetupScript} from '@adammatthiesen/astro-snipcart';
 - ```SCCartTotalValue``` Shows the current cart total ( $2.00 )
 - ```SCCustomerDashboard``` Shows the Sign-in/Customer Dashboard if you've enabled the feature within snipcart
 - ```SCMakeProduct``` is the script used for product creation
-- ```SCSetupScript``` Put this in your `<head>` tag to activate snipcart on your website
+- ```SCSetupScript``` Put this in your `<head>` tag to activate snipcart on your website (**DOSE NOT WORK WITH VIEW TRANSITIONS**)
+- ```SCSetupVUE``` Replaces `SCSetupScript` if you use `<ViewTransitions />` (**REQUIRES `@astrojs/vue`**)
 
 ## Install Astro Snipcart
 
@@ -23,6 +26,30 @@ npm i @adammatthiesen/astro-snipcart
 ```
 
 Make sure to add ```PUBLIC_SNIPCART_API_KEY``` to your environment variables
+
+Add one of the following inside your `<head>`:
+
+Astro **Without ViewTransitions**
+```html
+---
+import { SCSetupScript } from '@adammatthiesen/astro-snipcart/vue';
+---
+<head>
+  /** Other Head Data */
+  <SCSetupScript />
+</head>
+```
+
+Astro **WITH ViewTransitions** *(Requires `@astrojs/vue`)*
+```html
+import { SCSetupVUE } from '@adammatthiesen/astro-snipcart/vue';
+---
+<head>
+  /** Other Head Data */
+  <SCSetupVUE transition:persist client:idle/>
+</head>
+
+```
 
 An example of making a product:
 
