@@ -1,5 +1,5 @@
 ---
-const publicApiKey = process.env.PUBLIC_SNIPCART_API_KEY || import.meta.env.PUBLIC_SNIPCART_API_KEY;
+const publicApiKey = import.meta.env.PUBLIC_SNIPCART_API_KEY;
 if (!publicApiKey) {
     throw new Error('Snipcart requires a public API key configuring. Ensure the PUBLIC_SNIPCART_API_KEY environment variable has been set.')
 }
